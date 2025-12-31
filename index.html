@@ -40,18 +40,16 @@
             padding: 0;
             box-sizing: border-box;
         }
-
-        html {
-            scroll-behavior: smooth;
-        }
-
-        body {
-            font-family: var(--font-body);
-            background-color: var(--color-bg);
-            color: var(--color-text-main);
-            overflow-x: hidden;
-            line-height: 1.6;
-        }
+html, body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden; /* strictly prevents horizontal scroll */
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-body);
+    background-color: var(--color-bg);
+    color: var(--color-text-main);
+}
 
         /* Custom Scrollbar */
         ::-webkit-scrollbar {
